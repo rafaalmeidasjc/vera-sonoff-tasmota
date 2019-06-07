@@ -1,0 +1,33 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>13</minor>
+   </specVersion>
+   <device>
+      <deviceType>urn:schemas-upnp-org:device:BinaryLight:1</deviceType>
+      <staticJson>D_HttpSwitch1.json</staticJson>
+      <friendlyName>KK-SP3 Smart WiFi Switch</friendlyName>
+      <manufacturer>nullx8</manufacturer>
+      <protocol>cr</protocol>
+      <handleChildren>0</handleChildren>
+      <serviceList>
+         <service>
+            <serviceType>urn:mios-nullx8-com:service:HttpSwitch:1</serviceType>
+            <serviceId>urn:mios-nullx8-com:serviceId:HttpSwitch1</serviceId>
+            <SCPDURL>S_HttpSwitch1.xml</SCPDURL>
+         </service>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:SwitchPower:1</serviceType>
+            <serviceId>urn:upnp-org:serviceId:SwitchPower1</serviceId>
+            <SCPDURL>S_SwitchPower1.xml</SCPDURL>
+         </service>
+      </serviceList>
+      <implementationList>
+         <implementationFile>I_HttpSwitch1.xml</implementationFile>
+      </implementationList>
+   </device>
+</root>
+
